@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: YellowGemData
   m_EditorClassIdentifier: 
   Index: 2
+  GameName: 
   GemSprite: {fileID: 21300000, guid: 3e856f4603ca42c4e95189d9e6496a17, type: 3}
   BaseSellPrice: 0
-  GemPrefab: {fileID: 3388609493781002482, guid: 0c7e9593017412346b25346cff5f65f5, type: 3}
+  GemPrefab: {fileID: 1337319656915173296, guid: 0c7e9593017412346b25346cff5f65f5, type: 3}

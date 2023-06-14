@@ -7,8 +7,9 @@ namespace Gems
     public class GemData : ScriptableObject
     {
         public int Index;
+        public string GameName;
         public Sprite GemSprite;
         public float BaseSellPrice;
-        public GameObject GemPrefab;
+        public GemController GemPrefab;
     }
 }
