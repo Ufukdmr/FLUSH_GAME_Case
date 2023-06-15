@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: GreenGemData
   m_EditorClassIdentifier: 
   Index: 0
-  GameName: 
+  GameName: Green Gem
   GemSprite: {fileID: 21300000, guid: 15fcaba0c1439d74287b73eaf700a083, type: 3}
-  BaseSellPrice: 0
+  BaseSellPrice: 5
   GemPrefab: {fileID: 1337319656915173296, guid: 184feea7132c60d47805d770471bd9ca, type: 3}

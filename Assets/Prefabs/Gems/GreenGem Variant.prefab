@@ -67,6 +67,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: de238b9e18439534aa409f4470889c77, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8bb36ea87c5a40f40a4b5ec2467f24c5, type: 2}
     - target: {fileID: 919132149155446097, guid: de238b9e18439534aa409f4470889c77, type: 3}
       propertyPath: m_Name
       value: Gem_Green

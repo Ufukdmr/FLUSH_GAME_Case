@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: PinkGemData
   m_EditorClassIdentifier: 
   Index: 1
-  GameName: 
+  GameName: Pink Gem
   GemSprite: {fileID: 21300000, guid: 8a09688c33c101545aa18a8c223bd307, type: 3}
-  BaseSellPrice: 0
+  BaseSellPrice: 10
   GemPrefab: {fileID: 1337319656915173296, guid: 14ee7ab8479ebea49ba541fe8e25701e, type: 3}

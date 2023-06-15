@@ -27,7 +27,7 @@ namespace GridSystem
             return (from data in GemData where data.Index == index select data.GemPrefab).FirstOrDefault();
         }
 
-        public GemData GetRandomGem() => GemData[Random.Range(0, GemData.Length - 1)];
+        public GemData GetRandomGem() => GemData[Random.Range(0, GemData.Length)];
 
 #endregion
 

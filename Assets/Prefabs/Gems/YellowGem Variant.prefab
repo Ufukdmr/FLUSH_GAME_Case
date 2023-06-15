@@ -67,6 +67,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 6c2ce35739eac0747b3cdc0cb3794f99, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e464fd2b9fd113a4eb9a5940af729c8e, type: 2}
     - target: {fileID: 919132149155446097, guid: 6c2ce35739eac0747b3cdc0cb3794f99, type: 3}
       propertyPath: m_Name
       value: Gem_Yellow
@@ -86,7 +90,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2643396433365149760, guid: 51ef593d9bb0b1740924eb0582245422, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 9.91
       objectReference: {fileID: 0}
     - target: {fileID: 2643396433365149760, guid: 51ef593d9bb0b1740924eb0582245422, type: 3}
       propertyPath: m_LocalPosition.y

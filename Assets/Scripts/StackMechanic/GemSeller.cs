@@ -1,4 +1,5 @@
 using System;
+using Balance;
 using DG.Tweening;
 using Gems;
 using Lean.Pool;
@@ -64,7 +65,12 @@ namespace StackMechanic
         {
             StackArea.RemoveGemFromList(gem);
             gem.transform.SetParent(_currentSellArea.transform);
-            gem.MoveToTargetPosition(0, () => { LeanPool.Despawn(gem); });
+            gem.MoveToTargetPosition(0, () =>
+            {
+                var incomeGold = Mathf.FloorToInt(gem.Data.BaseSellPrice * gem.transform.localScale.y*100);
+                BalanceManager.AddToBalance(incomeGold);
+                LeanPool.Despawn(gem);
+            });
             DOVirtual.DelayedCall(SellRate, () =>
             {
                 if (_currentSellArea == null)
