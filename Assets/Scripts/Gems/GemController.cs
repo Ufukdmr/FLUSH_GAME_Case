@@ -44,9 +44,7 @@ namespace Gems
             
             return  transform.localScale.x >= InteractableScale;
         }
-
-       
-
+        
         public void MoveToTargetPosition(float yPos, Action onCompleted = null)
         {
             _scaleTween?.Kill();

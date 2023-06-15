@@ -14,7 +14,15 @@ namespace Balance
         private const string BALANCE_SAVE_KEY = "Balance_Key";
         
 #region UNITY_METHODS
+        private void Awake()
+        {
+            Load();
+        }
 
+        private void OnDisable()
+        {
+            Save();
+        }
 #endregion
 
 
@@ -26,6 +34,11 @@ namespace Balance
             OnBalanceChange?.Invoke();
         }
 
+        public static void SetBalance(int balance)
+        {
+            CurrentBalance = balance;
+            OnBalanceChange?.Invoke();
+        }
 #endregion
 
 
@@ -33,10 +46,12 @@ namespace Balance
 
         private void Save()
         {
+            PlayerPrefs.SetInt(BALANCE_SAVE_KEY,CurrentBalance);
         }
 
         private void Load()
         {
+            SetBalance(PlayerPrefs.GetInt(BALANCE_SAVE_KEY));
         }
 
 #endregion

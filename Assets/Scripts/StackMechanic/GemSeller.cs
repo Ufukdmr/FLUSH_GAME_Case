@@ -4,6 +4,7 @@ using DG.Tweening;
 using Gems;
 using Lean.Pool;
 using UnityEngine;
+using Value;
 
 namespace StackMechanic
 {
@@ -13,9 +14,7 @@ namespace StackMechanic
 
 //------Serialized Fields-------//
         [SerializeField] private PLayerStackArea StackArea;
-
         [SerializeField] private float SellRate = .1f;
-
 //------Private Variables-------//
         private GemSellArea _currentSellArea;
 
@@ -69,6 +68,7 @@ namespace StackMechanic
             {
                 var incomeGold = Mathf.FloorToInt(gem.Data.BaseSellPrice * gem.transform.localScale.y*100);
                 BalanceManager.AddToBalance(incomeGold);
+                gem.Data.SellGem();
                 LeanPool.Despawn(gem);
             });
             DOVirtual.DelayedCall(SellRate, () =>

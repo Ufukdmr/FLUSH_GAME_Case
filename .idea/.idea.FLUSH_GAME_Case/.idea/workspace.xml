@@ -11,8 +11,11 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/685c48cf8f0b48abb797275c046dda6a158a00/a3/60840a07/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/685c48cf8f0b48abb797275c046dda6a158a00/f4/183d1b6e/ScriptableObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GridSystem/GridGemController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Downloads/Base-Defense/Base-Defense/Assets/Gigantic/Scripts/UI/BuyButton.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Downloads/Codes-20230131T122357Z-001/Codes/Scripts/Manager/BalanceManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Downloads/Codes-20230131T122357Z-001/Codes/Scripts/ReferenceValue/IntRef.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Downloads/Codes-20230131T122357Z-001/Codes/Scripts/ReferenceValue/RefValue.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Downloads/Codes-20230131T122357Z-001/Codes/Scripts/UI/MoneyText.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -89,7 +92,7 @@
       <workItem from="1686617801377" duration="476000" />
       <workItem from="1686618492257" duration="3809000" />
       <workItem from="1686646872415" duration="1686000" />
-      <workItem from="1686791699814" duration="3852000" />
+      <workItem from="1686791699814" duration="10175000" />
     </task>
     <servers />
   </component>
