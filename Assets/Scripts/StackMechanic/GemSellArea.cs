@@ -1,9 +1,8 @@
-using StackMechanic;
 using UnityEngine;
 
-namespace Player
+namespace StackMechanic
 {
-    public class PlayerStackArea : StackArea
+    public class GemSellArea : MonoBehaviour
     {
 //-------Public Variables-------//
 

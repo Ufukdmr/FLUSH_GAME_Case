@@ -12,7 +12,7 @@ namespace StackMechanic
 //-------Public Variables-------//
 
 //------Serialized Fields-------//
-        [SerializeField] private StackArea PlayerStackArea;
+        [FormerlySerializedAs("PlayerStackArea")] [SerializeField] private PLayerStackArea PlayerPLayerStackArea;
         [SerializeField] private LayerMask GemLayer;
 
        [SerializeField] private float CollectRadius;
@@ -39,10 +39,10 @@ namespace StackMechanic
                 if (!targetGem)
                     return;
                 _canCollect = false;
-                targetGem.transform.SetParent(PlayerStackArea.transform);
-                targetGem.MoveToTargetPosition(PlayerStackArea.GetStackYPosition(), () =>
+                targetGem.transform.SetParent(PlayerPLayerStackArea.transform);
+                targetGem.MoveToTargetPosition(PlayerPLayerStackArea.GetStackYPosition(), () =>
                 {
-                    PlayerStackArea.CollectGem();
+                    PlayerPLayerStackArea.CollectGem(targetGem);
                     _canCollect = true;
                 });
             }
