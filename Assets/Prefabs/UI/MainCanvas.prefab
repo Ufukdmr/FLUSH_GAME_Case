@@ -169,6 +169,7 @@ GameObject:
   - component: {fileID: 1228802460}
   - component: {fileID: 1228802462}
   - component: {fileID: 1228802461}
+  - component: {fileID: 552488865}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -185,8 +186,8 @@ RectTransform:
   m_GameObject: {fileID: 1228802459}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1558395609}
   - {fileID: 5780384673991256292}
@@ -236,6 +237,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &552488865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1228802459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00c9df8920294567888c83a37ceeebc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1359545456
 GameObject:
   m_ObjectHideFlags: 0
@@ -937,10 +950,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1228802459}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 552488865}
+        m_TargetAssemblyTypeName: PopUp.PopUpController, Assembly-CSharp
+        m_MethodName: ClosePopUp
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1472,6 +1485,10 @@ PrefabInstance:
       propertyPath: moveThreshold
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3881087803815115468, guid: ec536a7718376554185e4a856d5ae230, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3881087803815115471, guid: ec536a7718376554185e4a856d5ae230, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0.5
@@ -1703,7 +1720,7 @@ PrefabInstance:
     - target: {fileID: 6487107567786954559, guid: 93e7301c0c5c5cf4d90ab9a84aaefbc4, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1228802459}
+      objectReference: {fileID: 552488865}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93e7301c0c5c5cf4d90ab9a84aaefbc4, type: 3}
 --- !u!224 &1283814502 stripped
