@@ -1,9 +1,6 @@
-using System;
 using System.Collections.Generic;
-using System.Linq;
 using Gems;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace StackMechanic
 {
@@ -12,18 +9,18 @@ namespace StackMechanic
 //-------Public Variables-------//
 
 //------Serialized Fields-------//
-        [FormerlySerializedAs("PlayerStackArea")] [SerializeField] private PLayerStackArea PlayerPLayerStackArea;
+        [SerializeField] private PLayerStackArea PlayerPLayerStackArea;
         [SerializeField] private LayerMask GemLayer;
 
-       [SerializeField] private float CollectRadius;
+        [SerializeField] private float CollectRadius;
 
 //------Private Variables-------//
-        private bool _canCollect=true;
-        private int _frameInterval=1;
+        private bool _canCollect = true;
+        private int _frameInterval = 1;
         private int _nearestGemCount;
         private Collider[] _nearestGems = new Collider[8];
         private List<GemController> _gems;
- 
+
 #region UNITY_METHODS
 
         private void Update()
@@ -46,7 +43,6 @@ namespace StackMechanic
                     _canCollect = true;
                 });
             }
-
         }
 
 #endregion
@@ -65,9 +61,9 @@ namespace StackMechanic
             for (var i = 0; i < _nearestGemCount; i++)
             {
                 var hitCollider = _nearestGems[i];
-                if(!hitCollider.TryGetComponent(out GemController gem))
+                if (!hitCollider.TryGetComponent(out GemController gem))
                     continue;
-                if(!gem.IsGemInteractable())
+                if (!gem.IsGemInteractable())
                     continue;
                 _gems.Add(gem);
             }
@@ -79,7 +75,6 @@ namespace StackMechanic
 
             for (var i = 0; i < _gems.Count; i++)
             {
-                
                 var gem = _gems[i];
                 var distance = Vector3.Distance(transform.position, gem.transform.position);
                 if (distance < nearestDistance)
@@ -100,6 +95,7 @@ namespace StackMechanic
                     _nearestGems, GemLayer);
             }
         }
+
 #endregion
     }
 }

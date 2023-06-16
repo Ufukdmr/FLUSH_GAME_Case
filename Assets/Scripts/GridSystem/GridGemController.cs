@@ -1,7 +1,5 @@
-using System.Collections.Generic;
 using System.Linq;
 using Gems;
-using Lean.Pool;
 using UnityEngine;
 
 namespace GridSystem
