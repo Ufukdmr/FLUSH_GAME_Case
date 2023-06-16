@@ -1,5 +1,4 @@
 using System;
-using DG.Tweening;
 using Gems;
 using Lean.Pool;
 using UnityEngine;
@@ -21,11 +20,7 @@ namespace GridSystem
         private GridGemController _gemController;
 
 #region UNITY_METHODS
-
-        private void Awake()
-        {
-            
-        }
+        
 
 #endregion
 
@@ -38,23 +33,18 @@ namespace GridSystem
             _gemController = gemController;
             SpawnGem();
         }
+        
+#endregion
 
-        public void SetGridIndex(int index) => _gridPointIndex = index;
 
-
-        public void ClearGridPoint()
+#region PRIVATE_METHODS
+        private void ClearGridPoint()
         {
             CurrentGem.OnCollected -= ClearGridPoint;
             GridGemIndex = -1;
             CurrentGem = null;
             SpawnGem();
         }
-
-#endregion
-
-
-#region PRIVATE_METHODS
-
         private void SpawnGem()
         {
             if (GridGemIndex == -1)

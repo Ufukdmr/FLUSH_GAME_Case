@@ -1,5 +1,3 @@
-
-using System;
 using Gems;
 using TMPro;
 using UnityEngine;
