@@ -22,6 +22,11 @@ namespace GridSystem
 
 #region UNITY_METHODS
 
+        private void Awake()
+        {
+            
+        }
+
 #endregion
 
 
